@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "elec/main.js",
   "scripts": {
-    "test": "electron ."
+    "test": "nodemon --exec electron .",
+    "start": "electron ."
   },
   "keywords": [],
   "author": "",

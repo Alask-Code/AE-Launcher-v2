@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron');
+// try { require('electron-reload')('../'); } catch (error) {}
 
 function createWindow () {
   const win = new BrowserWindow({
@@ -6,14 +7,14 @@ function createWindow () {
     width: 800,
     webPreferences: {
       nodeIntegration: true,
-      enableRemoteModule: true
+      contextIsolation: false
     },
     title: 'My App'
   });
 
-  win.setTitle('My App');
+  win.removeMenu();
   win.loadFile('index.html');
-  win.webContents.openDevTools();
+  win.openDevTools();
 }
-
+app.commandLine.appendSwitch('ignore-certificate-errors');
 app.whenReady().then(createWindow);
