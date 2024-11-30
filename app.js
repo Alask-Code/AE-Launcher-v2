@@ -16,4 +16,8 @@ async function profileLogin (email, password) {
   });
 }
 
-profileLogin('at', '');
+async function App(){
+  await profileLogin('at', '');
+
+}
+App()

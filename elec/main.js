@@ -1,5 +1,5 @@
 const { app, BrowserWindow } = require('electron');
-// try { require('electron-reload')('../'); } catch (error) {}
+try { require('electron-reload')('../**/*.html'); } catch (error) {}
 
 function createWindow () {
   const win = new BrowserWindow({
