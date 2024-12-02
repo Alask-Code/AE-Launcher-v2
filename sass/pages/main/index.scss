@@ -1,0 +1,36 @@
+@import "../../modules/reset";
+
+body {
+  color: white;
+  background: transparent;
+}
+.title {
+  font-size: 18pt;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  border-radius: 4px;
+  background: lightslategray;
+  grid-template-columns: 50% 50%;
+}
+.server {
+  width: 100%;
+  height: 100%;
+}
+.buttons {
+  background: yellow;
+}
+
+.server-list {
+  background: black;
+  p {
+    background: gray;
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
