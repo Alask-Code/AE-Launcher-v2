@@ -3,6 +3,7 @@
   height: 100%;
   display: grid;
   border-radius: 8px;
-  background: rgb(44, 54, 65);
+  background-image: url("../../assets/backgroundImage.jpg");
+  background-size: cover;
   grid-template-columns: 50% 50%;
 }
