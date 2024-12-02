@@ -2,35 +2,50 @@
 
 body {
   color: white;
-  background: transparent;
 }
-.title {
-  font-size: 18pt;
-}
-.container {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  border-radius: 4px;
-  background: lightslategray;
-  grid-template-columns: 50% 50%;
 
+.container {
+  // Wrap Main and Server Sections
+  @import "containerStyle";
+  @include containerStyle;
   .main {
+    // Main Content
     width: 100%;
     height: 100%;
+    padding: 12px;
+
+    .title {
+      font-size: 18pt;
+      -webkit-app-region: drag;
+    }
   }
   .server {
-    width: 100%;
-    height: 100%;
-    background: goldenrod;
+    //Server Content
+    @import "serverStyle";
+    @include serverStyle;
     .buttons {
+      // Buttons Upper Row
+      display: flex;
+      padding: 1px;
+      gap: 1px;
       background: yellow;
+      & button {
+        background: grey;
+        flex-grow: 1;
+      }
     }
     .server-list {
-      background: black;
+      // Servers List
+      @import "serverListStyle";
+      @include serverListStyle;
       p {
+        // Server list Item
         background: gray;
       }
+    }
+    .connect {
+      padding: 6px;
+      background: yellowgreen;
     }
   }
 }
