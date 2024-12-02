@@ -14,7 +14,10 @@ body {
     @include mainStyle;
 
     .title {
-      font-size: 18pt;
+      font-size: 22pt;
+      font-family: "Bender";
+      font-weight: lighter;
+      letter-spacing: 0.05rem;
       -webkit-app-region: drag;
     }
   }
@@ -26,37 +29,11 @@ body {
       // Buttons Upper Row
       @import "buttonsRowStyle";
       @include buttonsRowStyle;
-      & button {
-        flex-grow: 1;
-        padding: 6px;
-        display: flex;
-        align-items: center;
-        border-radius: 6px;
-        backdrop-filter: blur(12px);
-        background: rgba(255, 255, 255, 0.5);
-        justify-content: center;
-      }
     }
     .server-list {
       // Servers List
       @import "serverListStyle";
       @include serverListStyle;
-      p {
-        // Server list Item
-        padding: 3px;
-        border-radius: 3px;
-        backdrop-filter: blur(12px);
-        background: rgba(139, 69, 19, 0.5);
-      }
-    }
-    .connect {
-      padding: 12px;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      backdrop-filter: blur(12px);
-      justify-content: center;
-      background: rgba(154, 205, 50, 0.5);
     }
   }
 }

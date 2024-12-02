@@ -1,12 +1,14 @@
+@import "fonts";
 * {
   margin: 0;
   padding: 0;
   border: none;
   outline: none;
+  font-size: 12pt;
   overflow: hidden;
   user-select: none;
-  font-family: system-ui;
   box-sizing: border-box;
+  font-family: "AR Techni";
 }
 
 html,

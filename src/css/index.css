@@ -1,14 +1,23 @@
+@font-face {
+  font-family: Bender;
+  src: url("../../assets/bender.light.otf") format("opentype");
+}
+@font-face {
+  font-family: "AR Techni";
+  src: url("../../assets/ar.techni.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
   border: none;
   outline: none;
+  font-size: 12pt;
   overflow: hidden;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  font-family: system-ui;
   box-sizing: border-box;
+  font-family: "AR Techni";
 }
 
 html,
@@ -36,7 +45,10 @@ body {
   padding: 24px;
 }
 .container .main .title {
-  font-size: 18pt;
+  font-size: 22pt;
+  font-family: "Bender";
+  font-weight: lighter;
+  letter-spacing: 0.05rem;
   -webkit-app-region: drag;
 }
 .container .server {
@@ -74,14 +86,14 @@ body {
           backdrop-filter: blur(12px);
   background: rgba(255, 255, 255, 0.1);
 }
-.container .server .server-list p {
+.container .server .server-list .serverListItem {
   padding: 3px;
   border-radius: 3px;
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
   background: rgba(139, 69, 19, 0.5);
 }
-.container .server .connect {
+.container .server .server-list .connectButton {
   padding: 12px;
   border-radius: 6px;
   display: flex;
