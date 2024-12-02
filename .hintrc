@@ -1,8 +1,4 @@
 {
-  "extends": [
-    "development"
-  ],
-  "hints": {
-    "compat-api/css": "off"
-  }
+  "extends": ["development"],
+  "hints": {"compat-api/css": "off"}
 }
